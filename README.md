@@ -13,9 +13,9 @@
 12) SELECT last_name FROM actor GROUP BY last_name;
 13)
 14)
-15)
+15) SELECT release_year FROM film WHERE title = 'Academy Dinosaur';
 16) SELECT AVG(length) FROM film;
-17)
+17) SELECT category, AVG(length) FROM film_list GROUP BY category;
 18) SELECT COUNT(*) FROM film WHERE (description LIKE '%robot%');
 19) SELECT title, length FROM film WHERE length = (SELECT MAX(length) FROM film);
 20) SELECT COUNT(*) FROM film WHERE (release_year = '2010');    #For some reason, all films were set to 2006 as release year?
